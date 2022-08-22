@@ -247,10 +247,10 @@
 	  width: 600px;
 	  display: flex;
 	  position: relative;
-	  margin: auto;
 	  padding: 0.5em 1em;
 	  border: solid 3px #95ccff;
 	  border-radius: 8px;
+	  margin: auto;
   }
   .box26 .box-title {
     position: absolute;
