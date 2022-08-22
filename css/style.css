@@ -244,7 +244,7 @@
   }
 
   .box26 {
-	  width: 700px;
+	  width: 60%;
 	  display: flex;
 	  position: relative;
 	  padding: 0.5em 1em;
@@ -595,5 +595,8 @@ h2 {
 	h2 {
 		line-height: 1.6;
 		text-align: center;
+	}
+	.box26 {
+		width: 100%
 	}
 }
