@@ -230,6 +230,8 @@
   }
 
 /* -------------------------- */
+  .top-contents {
+  }
 
   .top-contents h1 {
     color: #6cb4e4;
@@ -242,12 +244,13 @@
   }
 
   .box26 {
-    width: 600px;
-    position: relative;
-    margin: 2em 0;
-    padding: 0.5em 1em;
-    border: solid 3px #95ccff;
-    border-radius: 8px;
+	  width: 600px;
+	  align: center;
+	  position: relative;
+	  margin: 2em 0;
+	  padding: 0.5em 1em;
+	  border: solid 3px #95ccff;
+	  border-radius: 8px;
   }
   .box26 .box-title {
     position: absolute;
