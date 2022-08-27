@@ -230,8 +230,6 @@
   }
 
 /* -------------------------- */
-  .top-contents {
-  }
 
   .top-contents h1 {
     color: #6cb4e4;
@@ -245,7 +243,7 @@
 
   .box26 {
 	  width: 60%;
-	  display: flex;
+	  /*display: flex;*/
 	  position: relative;
 	  padding: 0.5em 1em;
 	  border: solid 3px #95ccff;
@@ -267,6 +265,30 @@
   .box26 p {
     margin: 0; 
     padding: 0;
+  }
+
+  .addontable {
+    width: 100%;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-top: 1px solid #0099CC;
+  }
+
+  .addontable table th,
+  table td {
+    border-bottom: 1px solid #0099CC;
+    padding: 2px;
+    text-align: center;
+    /*width: 20%;*/
+  }
+
+  .addontable th {
+    color: #FFFFFF;
+    background: #0099CC;
+  }
+
+  .addontable.color {
+    background: #DDF1F4;
   }
 
 /* -------------------------- */
