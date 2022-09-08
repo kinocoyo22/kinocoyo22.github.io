@@ -32,16 +32,19 @@
         <li><a href="#" type=“button” onclick="location.href='profile.html'">プロフィール</a></li>
       </ul>
     </nav>
-    <nav class="sp-nav">
-      <ul>
-        <li><a href="#" type=“button” onclick="location.href='index.html'">ホーム</a></li>
-        <li><a href="#" type=“button” onclick="location.href='profile.html'">プロフィール</a></li>
-        <li class="close"><span>閉じる</span></li>
-      </ul>
+    <nav class="header__nav nav" id="js-nav">
+      <ul class="nav__items nav-items">
+        
+        <li class="nav-items__item"><a href="index.html">ホーム</a></li>
+        <li class="nav-items__item"><a href="profile.html">プロフィール</a></li>
+    
+    </ul>
     </nav>
-    <div id="hamburger">
-      <span></span>
-    </div>
+      <button class="header__hamburger hamburger" id="js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </buttom>
   </header>
   <div class="top-wrapper">
     <div class="container">
@@ -121,23 +124,25 @@
     <div class="box26">
       <span class="box-title">ハート最大値変更（イベント）</span>
       <p>
-        独自に追加したハート最大値変更イベントを追加したBP。コマンドブロックと組み合わせることで、ハート最大値を変えられます。
-    </p>
-    <table class="addontable">
-      <tr>
-        <th>Name(File)</th>
-        <th>Remarks</th>
-        <th>動作確認Ver.</th>
-        <th>Upload Date</th>
-      </tr>
-      <tr>
-        <td><a href="files/behaviorpack/Ki_CSC_1_2_1.mcaddon"
-          download="../files/behaviorpack/Ki_CSC_1_2_1.mcaddon">Ki_CSC_1_2_1</a></td>
-          <td>ハートの最大値が0.5、1、2、4、10、20をイベントで変更できる。イベント名は"kinocoyo:on_heart_xxx"、xxxは050、010、020、040、100、200になります。それぞれがハート数と対応します。</td>
+        独自に追加したハート最大値変更イベントを追加したBP。コマンドブロックと組み合わせることで、ハート最大値を変えられます。イベント名は"kinocoyo:on_heart_xxx"、xxxは050、010、020、040、100、200になります。それぞれがハート数と対応します。
+      </p>
+      <table class="addontable">
+        <tr>
+          <th>Name(File)</th>
+          <th>Remarks</th>
+          <th>動作確認Ver.</th>
+          <th>Upload Date</th>
+        </tr>
+        <tr>
+          <td><a href="files/behaviorpack/Ki_CSC_1_2_1.mcaddon"
+              download="../files/behaviorpack/Ki_CSC_1_2_1.mcaddon">Ki_CSC_1_2_1</a></td>
+          <td>
+            ハートの最大値が0.5、1、2、4、10、20をイベントで変更できる。
+          </td>
           <td>動作確認中</td>
           <td>2022/09/x(仮)</td>
-      </tr>
-    </table>
+        </tr>
+      </table>
     </div>
     <br>
 
@@ -153,7 +158,7 @@
 
       </table>
     </div>
-    
+
     <br>
 
     <div class="box26">
@@ -181,6 +186,19 @@
     <!-- END top-contents -->
 
   </div>
+
+  <script>
+    const ham = document.querySelector('#js-hamburger'); //js-hamburgerの要素を取得し、変数hamに格納
+    const nav = document.querySelector('#js-nav'); //js-navの要素を取得し、変数navに格納
+
+    ham.addEventListener('click', function () { //ハンバーガーメニューをクリックしたら
+      console.log('ok!');
+      ham.classList.toggle('active'); // ハンバーガーメニューにactiveクラスを付け外し
+      nav.classList.toggle('active'); // ナビゲーションメニューにactiveクラスを付け外し
+    });
+  </script>
+
+
 </body>
 
 </html>
