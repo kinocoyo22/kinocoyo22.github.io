@@ -275,14 +275,14 @@ footer {
   font-size: 12px;
   border-collapse: collapse;
   border-top: 1px solid #0099CC;
+  word-wrap: break-all;
 }
 
 .addontable a {
   color: #0099CC;
 }
 
-.addontable table th,
-table td {
+.addontable table th, table td {
   border-bottom: 1px solid #0099CC;
   padding: 2px;
   text-align: center;
