@@ -322,6 +322,10 @@ footer {
   margin-top: 20px;
 }
 
+.profile p{
+  word-wrap: break-all;
+}
+
 .p-twitter-box {
   overflow: auto;
   height: 700px;
