@@ -369,6 +369,13 @@ footer {
 
 /* -------------------------- */
 
+
+.clearfix:after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
 .manual {
   clear:both;
 }
@@ -376,14 +383,13 @@ footer {
 .manual p {
   clear:both;
   display:block;
-  text-align: center;
-  width: 90%;
   float:none;
 }
 
 .manual ul {
   display: block;
   float:none;
+  padding-left: 0%;
 }
 
 .manual li {
