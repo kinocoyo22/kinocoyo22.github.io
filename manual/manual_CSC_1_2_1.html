@@ -1,0 +1,105 @@
+<html>
+
+<head>
+  <meta charset='utf-8'>
+
+  <meta property="og:description" content="ホリデークラフター：きのこよが自作したアドオン（ビヘイビアーパックなど）を公開しています。ご自由にダウンロードください。">
+  <meta property="og:title" content="きのこよのアドオンの使い方">
+  <meta property="og:image" content="https://kinocoyo22.github.io/image/og.jpeg">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1080">
+  <meta name="theme-color" content="#ffc7fd">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kinocoyo22.github.io/index.html">
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kinocoyo add-on page</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="https://kinocoyo22.github.io/index.html">きのこよのホームページ</a>
+    </h1>
+    <nav class="pc-nav">
+      <ul>
+        <li><a href="#" type=“button” onclick="location.href='index.html'">ホーム</a></li>
+        <li><a href="#" type=“button” onclick="location.href='profile.html'">プロフィール</a></li>
+      </ul>
+    </nav>
+    <nav class="header__nav nav" id="js-nav">
+      <ul class="nav__items nav-items">
+    
+        <li class="nav-items__item"><a href="index.html">ホーム</a></li>
+        <li class="nav-items__item"><a href="profile.html">プロフィール</a></li>
+    
+      </ul>
+    </nav>
+    <button class="header__hamburger hamburger" id="js-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </buttom>
+  </header>
+  <div class="top-wrapper">
+    <div class="container">
+      <h1>アドオン使い方</h1>
+      <p>
+        マインクラフト統合版のアドオンデータの使い方を記載しています。<br>
+      </p>
+    </div>
+  </div>
+  <br>
+  <div class="top-contents">
+
+    <br>
+    <!-- World -->
+    <h1 align="center">Ki_CSC_1_2_1</h1>
+    <p class="manual">
+      <ul class="manual">
+        <ul>
+        <li>適用はBPのみです。RPはありません。</li>
+        <li>試験的ゲームプレイは不要です。</li>
+        <li>コマンドによってハート最大値を変更できます。対応するハート最大値は０．５、１、２、４、１０（通常）、２０です。</li>
+        <li>使用するコマンドは、以下です。 
+          <ul>
+            <li>ハート最大０．５： "/event entity target kinocoyo:on_heart_050" </li>
+            <li>ハート最大１： "/event entity target kinocoyo:on_heart_010" </li>
+            <li>ハート最大２： "/event entity target kinocoyo:on_heart_020" </li>
+            <li>ハート最大４： "/event entity target kinocoyo:on_heart_040" </li>
+            <li>ハート最大１０： "/event entity target kinocoyo:on_heart_100" </li>
+            <li>ハート最大２０： "/event entity target kinocoyo:on_heart_200" </li>
+          </ul>    
+        </li>
+        <li>上記コマンドのtargetはターゲットセレクタです。自分自身なら@s、コマンドブロックならば@pとかになります。</li>
+        <li>上記コマンドをコマンドブロックなどに入れることでも動作します。チャット欄から直接コマンドを実行しても動作します。</li>
+      </ul>
+    </ul>
+    </p>
+
+    <br>
+  
+    <!-- END top-contents -->
+
+  </div>
+
+  <script>
+    const ham = document.querySelector('#js-hamburger'); //js-hamburgerの要素を取得し、変数hamに格納
+    const nav = document.querySelector('#js-nav'); //js-navの要素を取得し、変数navに格納
+
+    ham.addEventListener('click', function () { //ハンバーガーメニューをクリックしたら
+      //console.log('ok!');
+      ham.classList.toggle('active'); // ハンバーガーメニューにactiveクラスを付け外し
+      nav.classList.toggle('active'); // ナビゲーションメニューにactiveクラスを付け外し
+    });
+  </script>
+
+
+</body>
+
+</html>

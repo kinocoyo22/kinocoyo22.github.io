@@ -11,6 +11,18 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 0 0 15px;
+  font-size: 14px;
+}
+
+
 .container {
   text-align: center;
   width: 100%;
@@ -355,6 +367,34 @@ footer {
   background: #f7bcbc;
 }
 
+/* -------------------------- */
+
+.manual {
+  clear:both;
+}
+
+.manual p {
+  clear:both;
+  display:block;
+  text-align: center;
+  width: 90%;
+  float:none;
+}
+
+.manual ul {
+  display: block;
+  float:none;
+}
+
+.manual li {
+  list-style:circle;
+  display: list-item;
+}
+
+
+/* -------------------------- */
+
+
 
 @media all and (max-width: 660px) {
   .top-wrapper {
@@ -503,16 +543,6 @@ nav {
   margin: 0 0 0 auto;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  display: flex;
-}
-
-li {
-  margin: 0 0 0 15px;
-  font-size: 14px;
-}
 
 .main-visual {
   display: flex;
