@@ -12,7 +12,7 @@ var html =
 <nav class=\"header__nav nav\" id=\"js-nav\">\
     <ul class=\"nav__items nav-items\">\
         <li class=\"nav-items__item\"><a href=\"https://kinocoyo22.github.io/index.html\">ホーム</a></li>\
-        <li class=\"nav-items__item\"><a href=\"https://kinocoyo22.github.io/index.html\">プロフィール</a></li>\
+        <li class=\"nav-items__item\"><a href=\"https://kinocoyo22.github.io/profile.html\">プロフィール</a></li>\
     </ul>\
 </nav>\
 <button class=\"header__hamburger hamburger\" id=\"js-hamburger\">\
