@@ -1,0 +1,107 @@
+<html>
+
+<head>
+  <meta charset='utf-8'>
+
+  <meta property="og:description" content="ホリデークラフター：きのこよが自作したアドオン（ビヘイビアーパックなど）を公開しています。ご自由にダウンロードください。">
+  <meta property="og:title" content="きのこよのアドオンの使い方">
+  <meta property="og:image" content="https://kinocoyo22.github.io/image/og.jpeg">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1080">
+  <meta name="theme-color" content="#ffc7fd">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kinocoyo22.github.io/index.html">
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kinocoyo add-on page</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+</head>
+
+<body>
+  <header id="header_common">
+    <script src="../js/header_common.js"></script>
+  </header>
+
+
+  <br>
+  <br>
+  <br>
+  <div class="top-contents">
+
+    <br>
+    <!-- World -->
+    <h1 align="center">Ki_CSC_1_2_1</h1>
+    <p class="manual">
+    <ul class="manual">
+      <ul>
+        <li>適用はBPとRPの両方です。</li>
+        <li>試験的ゲームプレイの設定が必要です（ゲーム設定の"実験"と書かれているところ）。"ホリデークリエイターの特徴"をONにする必要があります。既存ワールドへの適用する場合にはワールドがコピーされます。</li>
+        <li><img width="90%" src="./image_CSC_2_1_1/CSC_2_1_1_experimental.png"></li>
+      </ul>
+    </ul>
+    <br>
+    <ul class="manual">
+      <ul>
+        <li>ベンチはクラフトすることができます。クラフトテーブルは以下です。クリエイティブモードならば階段と同じところにおいてあります。</li>
+        <li><img width="90%" src="./image_CSC_2_1_1/CSC_2_1_1_crafting.png"></li>
+        <li>ベンチのクラフトに対応する木材は以下です。ベンチが並んでいる画像の左からの順番です。
+          <ul>
+            <li>樫、oakの木材、ベンチのidは"kinocoyo:acacia_bench"</li>
+            <li>トウヒ、spruceの木材、ベンチのidは"kinocoyo:spruce_bench"</li>
+            <li>樺、birchの木材、ベンチのidは"kinocoyo:birch_bench"</li>
+            <li>黒樫、darck oakの木材、ベンチのidは"kinocoyo:dark_oak_bench"</li>
+            <li>ジャングル、jungleの木材、ベンチのidは"kinocoyo:jungle_bench"</li>
+            <li>マングローブ、mangroveの木材、ベンチのidは"kinocoyo:mangrove_bench"</li>
+            <li>クリムゾン、crimsonの木材、ベンチのidは"kinocoyo:crimson_bench"</li>
+            <li>ゆがんだ木、warpedの木材、ベンチのidは"kinocoyo:warped_bench"</li>
+          </ul>
+        </li>
+        <li><img width="90%" src="./image_CSC_2_1_1/CSC_2_1_1_linenup.png"></li>
+        </li>
+      </ul>
+    </ul>
+    <br>
+    <ul class="manual">
+      <ul>
+        <li>
+          [注意]ベンチ自体はブロックですが、座る実態はエンティティです。
+          そのため、コマンドで"/kill @e"を実行すると、ベンチの座るためのエンティティもkillしてしまい座れなくなります。
+          座れなくなったベンチは、壊してからもう一度設置すれば座れるようになります。
+          また、"/kill @e"のコマンドが必要な場合には、ブロックにのっかっている座るためのエンティティをkillしないようにする必要があります。
+          具体的には"/kill @e[type=!kinocoyo:frame_sit]"です。エンティティのidはkinocoyo:frame_sitになります。
+        </li>
+        <li>
+          [注意]ベンチの設置にはプレイヤーによる設置を想定して作成しています。コマンド等で設置した場合、座ることが正しく動作するかわかりません。
+        </li>
+      </ul>
+    </ul>
+    </p>
+
+    <br>
+
+    <!-- END top-contents -->
+
+  </div>
+
+  <script src="../js/hamburger_common.js"></script>
+  <!--
+  <script>
+    const ham = document.querySelector('#js-hamburger'); //js-hamburgerの要素を取得し、変数hamに格納
+    const nav = document.querySelector('#js-nav'); //js-navの要素を取得し、変数navに格納
+
+    ham.addEventListener('click', function () { //ハンバーガーメニューをクリックしたら
+      //console.log('ok!');
+      ham.classList.toggle('active'); // ハンバーガーメニューにactiveクラスを付け外し
+      nav.classList.toggle('active'); // ナビゲーションメニューにactiveクラスを付け外し
+    });
+  </script>
+  -->
+
+
+</body>
+
+</html>
