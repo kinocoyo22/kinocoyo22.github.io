@@ -1,0 +1,70 @@
+<html>
+
+<head>
+  <meta charset='utf-8'>
+
+  <meta property="og:description" content="ホリデークラフター：きのこよが自作したアドオン（ビヘイビアーパックなど）を公開しています。ご自由にダウンロードください。">
+  <meta property="og:title" content="きのこよのアドオンの使い方">
+  <meta property="og:image" content="https://kinocoyo22.github.io/image/og.jpeg">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1080">
+  <meta name="theme-color" content="#ffc7fd">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kinocoyo22.github.io/index.html">
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kinocoyo add-on page</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+</head>
+
+<body>
+  <header id="header_common">
+    <script src="../js/header_common.js"></script>
+  </header>
+
+  <br>
+  <br>
+  <br>
+  <div class="top-contents">
+
+    <br>
+    <!-- World -->
+    <h1 align="center">Ki_CSC_1_2_2</h1>
+    <p class="manual">
+    <ul class="manual">
+    <ul>
+      <li>適用はBPのみです。RPはありません。</li>
+      <li>試験的ゲームプレイは不要です。</li>
+      <li>コマンドによってハート最大値を変更できます。最小値が１、最大値が１０です。初期値が１で、イベントで１ずつ増加できます。
+      </li>
+      <li>死ぬと初期値（ハート最大値１）に戻ります。
+      </li>
+      <li>使用するコマンドは、以下です。
+        <ul>
+          <li>ハート最大値を増加： "/event entity target kinocoyo:upgrade_heart" </li>
+          <li>ハート初期化（１）： "/event entity target kinocoyo:init_heart_to1" </li>
+        </ul>
+      </li>
+      <li>
+        上記コマンドのtargetはターゲットセレクタです。自分自身なら@s、コマンドブロックならば@pとかになります。
+        （コマンドブロックを衝撃にして、"/event entity @p kinocoyo:upgrade_heart"と設定し、ボタンなどで起動）
+      </li>
+      <li>上記コマンドをコマンドブロックなどに入れることでも動作します。チャット欄から直接コマンドを実行しても動作します。</li>
+    </ul>
+  </ul>
+    </p>
+    <br>
+
+    <!-- END top-contents -->
+
+  </div>
+
+  <script src="../js/hamburger_common.js"></script>
+
+</body>
+
+</html>
